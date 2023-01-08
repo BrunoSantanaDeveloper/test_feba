@@ -6,6 +6,16 @@
  * 
 */
 
+
+    $(document).ready(function(){
+        $.getJSON( "enterprises.json", function(data) {
+             console.log(data);
+        });
+    });
+
+
+
+
 var App =(function (jQ, win, doc){
     "use strict";
     var App = {AppInfo: {name: "GENOX", package: "1.3.0", version: "1.3.0", author: "Softnio"} },

@@ -1,0 +1,58 @@
+{
+    "enterprises": [
+        {
+            "title": "HORIZONTE RESIDENCE", 
+            "type": "PRÉ LANÇAMENTO", 
+            "city": "Barra Velha",
+            "neighborhood":"Tabuleiro"
+        },
+        {
+            "title": "ONE TOWER", 
+            "type": "", 
+            "city": "",
+            "neighborhood":""
+        },
+        {
+            "title": "INFINITY COAST", 
+            "type": "", 
+            "city": "",
+            "neighborhood":""
+        },
+        {
+            "title": "SKYLINE TOWER", 
+            "type": "", 
+            "city": "",
+            "neighborhood":""
+        },
+        {
+            "title": "GRANDE PLACE TOWER", 
+            "type": "", 
+            "city": "",
+            "neighborhood":""
+        },
+        {
+            "title": "IMPERIUM TOWER", 
+            "type": "", 
+            "city": "",
+            "neighborhood":""
+        },
+        {
+            "title": "TITANIUM TOWER", 
+            "type": "", 
+            "city": "",
+            "neighborhood":""
+        },
+        {
+            "title": "BLUE COST TOWER", 
+            "type": "", 
+            "city": "",
+            "neighborhood":""
+        },
+        {
+            "title": "GRAND PLACE TOWER", 
+            "type": "", 
+            "city": "",
+            "neighborhood":""
+        },
+    ]
+}
