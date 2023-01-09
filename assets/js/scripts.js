@@ -218,22 +218,7 @@ App = function (App, $, window, document) {
 		}
 	};
     App.components.docReady.push(App.Util.imageBG);
-    
-    App.Util.Ovm = function () {
-		var $elm_ovm = $('.nk-ovm'), $elm_ovm_mask = $('.nk-ovm[class*=mask]');
-		if($elm_ovm.exists()) {
-			$elm_ovm.each(function(){
-				if (!$(this).parent().hasClass('has-ovm')) { $(this).parent().addClass('has-ovm');}
-			});
-		}
-        if($elm_ovm_mask.exists()) {
-			$elm_ovm_mask.each(function(){
-				if (!$(this).parent().hasClass('has-mask')) { $(this).parent().addClass('has-mask');}
-			});
-		}
-	};
-	
-	App.components.docReady.push(App.Util.Ovm);
+   
 	
 	// scrollAnimation !Util @v1.0
     App.Util.scrollAnimation = function () {
@@ -444,7 +429,7 @@ App = function (App, $, window, document) {
 
         var $filter_project = $('.project');
         var $filter_tiger = $('.project-filter li');
-        setTimeout(() => {
+        
         $filter_project.each(function(){
             var $self = $(this),
                 f_layout =($self.data('layout')) ? $self.data('layout') : 'packed';
@@ -452,7 +437,7 @@ App = function (App, $, window, document) {
                 layout: f_layout,
             });
         })
-    }, "3000")
+        
         $filter_tiger.on('click',function() { 
             $filter_tiger.removeClass('active');
             $(this).addClass('active');
@@ -465,7 +450,7 @@ App = function (App, $, window, document) {
                 if(k == 0){
 
                     $( "#project1" ).append(  
-                        '<div class="col-sm-6 col-lg-6 filtr-item" >\n' +
+                        '<div class="col-sm-6 col-lg-6 filtr-item" data-category="1,2,3">\n' +
 						'	<a href="#">\n' +
 						'		<div class="project-item">\n' +
 						'			<div class="project-image">\n' +
@@ -511,7 +496,7 @@ App = function (App, $, window, document) {
                 }else{
                     $( "#project1" ).append(  
 
-                        '<div class="col-sm-6 col-lg-3 filtr-item" >\n' +
+                        '<div class="col-sm-6 col-lg-3 filtr-item" data-category="2" >\n' +
                         '    <div class="project-item">\n' +
                         '        <div class="project-image">\n' +
                         '            <img src="images/gallery/'+ v.image +'.jpg" srcset="images/'+ v.image +'@2x.jpg 2x" alt="">\n' +
