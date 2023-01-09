@@ -463,7 +463,7 @@ App = function (App, $, window, document) {
             $filter_tiger.removeClass('active');
             $(this).addClass('active');
         });
-
+        setTimeout(() => {
         $.getJSON( "enterprises.json", function(data) {
             $.each(data.enterprises, function( k, v ) {
 
@@ -534,7 +534,7 @@ App = function (App, $, window, document) {
                         
             });
         });
-            
+    }, "3000")
 
 
 	};
