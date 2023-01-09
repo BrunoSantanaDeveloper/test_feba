@@ -467,51 +467,7 @@ App = function (App, $, window, document) {
         $.getJSON( "enterprises.json", function(data) {
             $.each(data.enterprises, function( k, v ) {
 console.log(k)
-                if(k == 0){
-
-                        '<div class="col-sm-6 col-lg-6 filtr-item" >\n' +
-						'	<a href="texas-work-single.html">\n' +
-						'		<div class="project-item">\n' +
-						'			<div class="project-image">\n' +
-						'				<img src="images/gallery/'+ v.image +'.jpg" srcset="images/'+ v.image +'@2x.jpg 2x"alt="">\n' +
-						'			</div>\n' +
-						'			<div class="project-no-over">\n' +
-						'				<button type="button" class="btn btn-light">'+ v.type +'</button>\n' +
-						'				<h4>'+ v.title +'</h4>\n' +
-						'			</div>\n' +
-						'			<div class="project-mask"></div>\n' +
-						'			<div class="project-over">\n' +
-						'				<div class="project-content">\n' +
-						'					<button type="button" class="btn btn-light">'+ v.type +'</button>\n' +
-						'					<h4>'+ v.title +'</h4>\n' +
-						'					<div class="row">\n' +
-						'						<div class="col-3">\n' +
-						'							<p>Cidade</p>\n' +
-						'							<p><b>'+ v.city +'</b></p>\n' +
-						'						</div>\n' +
-						'						<div class="col-6">\n' +
-						'							<p>Bairro</p>\n' +
-						'							<p><b>'+ v.neighborhood +'</b></p>\n' +
-						'						</div>\n' +
-						'					</div>\n' +
-						'					<div class="row pt-4">\n' +
-						'						<div class="col-12">\n' +
-						'							<img class="float-left mr-2" src="images/bedroom.png">\n' +
-						'							<p class="float-left">Apartamento com 3 dormitórios sendo 1 suite</p>\n' +
-						'						</div>\n' +
-						'					</div>\n' +
-						'					<div class="row">\n' +
-						'						<div class="col-12">\n' +
-						'							<img class="float-left mr-2" src="images/video-security.png">\n' +
-						'							<p class="float-left mr-2">Condomínio Fechado</p>\n' +
-						'						</div>\n' +
-						'					</div>\n' +
-						'				</div>\n' +
-						'			</div>\n' +
-						'		</div>\n' +
-						'	</a>\n' +
-						'</div>\n'
-                }else{
+               
                     $( "#project1" ).append(  
 
                         '<div class="col-sm-6 col-lg-3 filtr-item" >\n' +
@@ -527,7 +483,7 @@ console.log(k)
                         '</div>\n'
     
                      );
-                }
+                
                 
                         
             });
