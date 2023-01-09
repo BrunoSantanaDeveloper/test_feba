@@ -437,7 +437,7 @@ App = function (App, $, window, document) {
                 layout: f_layout,
             });
         })
-    }, "3000")
+    }, "1000")
         $filter_tiger.on('click',function() { 
             $filter_tiger.removeClass('active');
             $(this).addClass('active');
