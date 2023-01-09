@@ -466,7 +466,7 @@ App = function (App, $, window, document) {
 
         $.getJSON( "enterprises.json", function(data) {
             $.each(data.enterprises, function( k, v ) {
-
+console.log(k)
                 if(k == 0){
 
                         '<div class="col-sm-6 col-lg-6 filtr-item" >\n' +
