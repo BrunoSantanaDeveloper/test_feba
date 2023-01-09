@@ -33,7 +33,7 @@
             "type": " ", 
             "city": " ",
             "neighborhood":" ",
-            "image":"grande-place-tower"
+            "image":"grand-place-tower"
         },
         {
             "title": "IMPERIUM TOWER", 
@@ -54,14 +54,14 @@
             "type": " ", 
             "city": " ",
             "neighborhood":" ",
-            "image":"blue-costs-tower"
+            "image":"blue-cost-tower"
         },
         {
             "title": "GRAND PLACE TOWER", 
             "type": " ", 
             "city": " ",
             "neighborhood":" ",
-            "image":"grande-place-tower2"
+            "image":"grand-place-tower2"
         }
     ]
 }
