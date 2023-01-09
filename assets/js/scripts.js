@@ -469,29 +469,30 @@ App = function (App, $, window, document) {
 
                 if(k == 0){
 
+                    $( "#project1" ).append(  
                         '<div class="col-sm-6 col-lg-6 filtr-item" >\n' +
 						'	<a href="texas-work-single.html">\n' +
 						'		<div class="project-item">\n' +
 						'			<div class="project-image">\n' +
-						'				<img src="images/gallery/horizonte-residence.jpg" alt="">\n' +
+						'				<img src="images/gallery/'+ v.image +'.jpg" srcset="images/'+ v.image +'@2x.jpg 2x" alt="">\n' +
 						'			</div>\n' +
 						'			<div class="project-no-over">\n' +
-						'				<button type="button" class="btn btn-light">PRÉ LANÇAMENTO</button>\n' +
-						'				<h4>Landing Page </h4>\n' +
+						'				<button type="button" class="btn btn-light">'+ v.type +'</button>\n' +
+						'				<h4>'+ v.title +'</h4>\n' +
 						'			</div>\n' +
 						'			<div class="project-mask"></div>\n' +
 						'			<div class="project-over">\n' +
 						'				<div class="project-content">\n' +
-						'					<button type="button" class="btn btn-light">PRÉ LANÇAMENTO</button>\n' +
-						'					<h4>Landing Page </h4>\n' +
+						'					<button type="button" class="btn btn-light">'+ v.type +'</button>\n' +
+						'					<h4>'+ v.title +'</h4>\n' +
 						'					<div class="row">\n' +
 						'						<div class="col-3">\n' +
 						'							<p>Cidade</p>\n' +
-						'							<p><b>Barra Velha</b></p>\n' +
+						'							<p><b>'+ v.coty +'</b></p>\n' +
 						'						</div>\n' +
 						'						<div class="col-6">\n' +
 						'							<p>Bairro</p>\n' +
-						'							<p><b>Tabuleiro</b></p>\n' +
+						'							<p><b>'+ v.neighborhood +'</b></p>\n' +
 						'						</div>\n' +
 						'					</div>\n' +
 						'					<div class="row pt-4">\n' +
@@ -511,6 +512,7 @@ App = function (App, $, window, document) {
 						'		</div>\n' +
 						'	</a>\n' +
 						'</div>\n' 
+                        );
                 }else{
                     $( "#project1" ).append(  
 
