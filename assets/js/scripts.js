@@ -466,8 +466,6 @@ App = function (App, $, window, document) {
 
         $.getJSON( "enterprises.json", function(data) {
             $.each(data.enterprises, function( k, v ) {
-                alert( "Key: " + k + ", Value: " + v );
-
                 $( "#project1" ).append(  
 
                     '<div class="col-sm-6 col-lg-3 filtr-item" >\n' +
