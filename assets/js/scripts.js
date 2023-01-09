@@ -448,17 +448,9 @@ App = function (App, $, window, document) {
     // Mozaic @v1.0
     App.Plugins.filterz = function () {
 
-        var $filter_project = $('.project');
+       
         var $filter_tiger = $('.project-filter li');
-        setTimeout(() => {
-        $filter_project.each(function(){
-            var $self = $(this),
-                f_layout =($self.data('layout')) ? $self.data('layout') : 'packed';
-            $(this).filterizr({
-                layout: f_layout,
-            });
-        })
-    }, "3000")
+        
         
         $filter_tiger.on('click',function() { 
             $filter_tiger.removeClass('active');
@@ -537,7 +529,16 @@ App = function (App, $, window, document) {
             });
         });
             
-        
+        setTimeout(() => {
+            var $filter_project = $('.project');
+        $filter_project.each(function(){
+            var $self = $(this),
+                f_layout =($self.data('layout')) ? $self.data('layout') : 'packed';
+            $(this).filterizr({
+                layout: f_layout,
+            });
+        })
+    }, "3000")
 
 
 	};
