@@ -429,7 +429,7 @@ App = function (App, $, window, document) {
 
         var $filter_project = $('.project');
         var $filter_tiger = $('.project-filter li');
-        
+        setTimeout(() => {
         $filter_project.each(function(){
             var $self = $(this),
                 f_layout =($self.data('layout')) ? $self.data('layout') : 'packed';
@@ -437,7 +437,7 @@ App = function (App, $, window, document) {
                 layout: f_layout,
             });
         })
-        
+    }, "3000")
         $filter_tiger.on('click',function() { 
             $filter_tiger.removeClass('active');
             $(this).addClass('active');
