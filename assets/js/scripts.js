@@ -473,7 +473,7 @@ App = function (App, $, window, document) {
                     '<div class="col-sm-6 col-lg-3 filtr-item" >\n' +
                     '    <div class="project-item">\n' +
                     '        <div class="project-image">\n' +
-                    '            <img src="images/gallery/'+ v.image +'" alt="">\n' +
+                    '            <img src="images/gallery/'+ v.image +'.jpg" srcset="images/'+ v.image +'@2x.jpg 2x" alt="">\n' +
                     '        </div>\n' +
                     '        <div class="project-mask"></div>\n' +
                     '        <div class="project-title">\n' +
