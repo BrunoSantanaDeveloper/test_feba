@@ -468,7 +468,7 @@ App = function (App, $, window, document) {
             $.each(data.enterprises, function( k, v ) {
                 alert( "Key: " + k + ", Value: " + v );
 
-                $( "#project1" ).append( $( 
+                $( "#project1" ).append(  
 
                     '<div class="col-sm-6 col-lg-3 filtr-item" >\n' +
                     '    <div class="project-item">\n' +
@@ -480,9 +480,9 @@ App = function (App, $, window, document) {
                     '            <h4>'+ v.title +'</h4>\n' +
                     '        </div>\n' +
                     '    </div>\n' +
-                    '</div>\n' +
+                    '</div>\n'
 
-                 ) );
+                 );
                         
             });
         });
