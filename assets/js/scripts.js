@@ -7,12 +7,7 @@
 */
 
 
-    $(document).ready(function(){
-        $.getJSON( "enterprises.json", function(data) {
-             console.log(data);
-        });
-        
-    });
+    
 
 
 
@@ -468,6 +463,13 @@ App = function (App, $, window, document) {
             $filter_tiger.removeClass('active');
             $(this).addClass('active');
         });
+
+        $.getJSON( "enterprises.json", function(data) {
+                console.log(data);
+        });
+            
+
+
 	};
     App.components.winLoad.push(App.Plugins.filterz);
 
