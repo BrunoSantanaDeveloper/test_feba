@@ -450,14 +450,15 @@ App = function (App, $, window, document) {
 
         var $filter_project = $('.project');
         var $filter_tiger = $('.project-filter li');
-        
-        /* $filter_project.each(function(){
+        setTimeout(() => {
+        $filter_project.each(function(){
             var $self = $(this),
                 f_layout =($self.data('layout')) ? $self.data('layout') : 'packed';
             $(this).filterizr({
                 layout: f_layout,
             });
-        }) */
+        })
+    }, "3000")
         
         $filter_tiger.on('click',function() { 
             $filter_tiger.removeClass('active');
@@ -473,7 +474,7 @@ App = function (App, $, window, document) {
 
                     $( "#project1" ).append(  
                         '<div class="col-sm-6 col-lg-6 filtr-item" >\n' +
-						'	<a href="texas-work-single.html">\n' +
+						'	<a href="#">\n' +
 						'		<div class="project-item">\n' +
 						'			<div class="project-image">\n' +
 						'				<img src="images/gallery/'+ v.image +'.jpg" srcset="images/'+ v.image +'@2x.jpg 2x" alt="">\n' +
