@@ -6,9 +6,13 @@
  * 
 */
 
-const res = await fetch("file.json");
-const data = await res.json();
-console.log(data);
+
+    $(document).ready(function(){
+        $.getJSON( "enterprises.json", function(data) {
+             console.log(data);
+        });
+        
+    });
 
 
 
