@@ -510,7 +510,7 @@ App = function (App, $, window, document) {
 						'			</div>\n' +
 						'		</div>\n' +
 						'	</a>\n' +
-						'</div>\n' +
+						'</div>\n' 
                 }else{
                     $( "#project1" ).append(  
 
