@@ -6,12 +6,6 @@
  * 
 */
 
-
-    
-
-
-
-
 var App =(function (jQ, win, doc){
     "use strict";
     var App = {AppInfo: {name: "GENOX", package: "1.3.0", version: "1.3.0", author: "Softnio"} },
@@ -448,43 +442,9 @@ App = function (App, $, window, document) {
     // Mozaic @v1.0
     App.Plugins.filterz = function () {
 
-       
+        var $filter_project = $('.project');
         var $filter_tiger = $('.project-filter li');
         
-        
-        $filter_tiger.on('click',function() { 
-            $filter_tiger.removeClass('active');
-            $(this).addClass('active');
-        });
-
-        
-
-        $.getJSON( "enterprises.json", function(data) {
-            $.each(data.enterprises, function( k, v ) {
-
-                
-                    $( "#project1" ).append(  
-
-                        '<div class="col-sm-6 col-lg-3 filtr-item" >\n' +
-                        '    <div class="project-item">\n' +
-                        '        <div class="project-image">\n' +
-                        '            <img src="images/gallery/'+ v.image +'.jpg" srcset="images/'+ v.image +'@2x.jpg 2x" alt="">\n' +
-                        '        </div>\n' +
-                        '        <div class="project-mask"></div>\n' +
-                        '        <div class="project-title">\n' +
-                        '            <h4>'+ v.title +'</h4>\n' +
-                        '        </div>\n' +
-                        '    </div>\n' +
-                        '</div>\n'
-    
-                     );
-                
-
-            });
-        });
-            
-        setTimeout(() => {
-            var $filter_project = $('.project');
         $filter_project.each(function(){
             var $self = $(this),
                 f_layout =($self.data('layout')) ? $self.data('layout') : 'packed';
@@ -492,9 +452,11 @@ App = function (App, $, window, document) {
                 layout: f_layout,
             });
         })
-    }, "3000")
-
-
+        
+        $filter_tiger.on('click',function() { 
+            $filter_tiger.removeClass('active');
+            $(this).addClass('active');
+        });
 	};
     App.components.winLoad.push(App.Plugins.filterz);
 
