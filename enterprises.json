@@ -5,6 +5,12 @@
             "type": "PRÉ LANÇAMENTO", 
             "city": "Barra Velha",
             "neighborhood":"Tabuleiro"
+        },
+        {
+            "title": "ONE TOWER", 
+            "type": " ", 
+            "city": " ",
+            "neighborhood":" "
         }
     ]
 }
